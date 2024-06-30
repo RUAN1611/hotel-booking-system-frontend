@@ -7,10 +7,12 @@ import { BookingListComponent } from './booking-list/booking-list.component';
 import { BookingFormComponent } from './booking-form/booking-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [AppComponent, BookingListComponent, BookingFormComponent],
-  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
+  declarations: [AppComponent, BookingListComponent, BookingFormComponent, NavbarComponent],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, NgbModule],
   providers: [],
   bootstrap: [AppComponent],
 })
