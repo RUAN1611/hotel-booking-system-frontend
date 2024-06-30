@@ -1,0 +1,29 @@
+<div>
+  <h2>Add Booking</h2>
+  <form (ngSubmit)="addBooking()">
+    <label>Customer Name:</label>
+    <input [(ngModel)]="booking.customerName" name="customerName" required />
+    <label>Room Number:</label>
+    <input
+      type="number"
+      [(ngModel)]="booking.roomNumber"
+      name="roomNumber"
+      required
+    />
+    <label>Check-In-Date:</label>
+    <input
+      type="date"
+      [(ngModel)]="booking.checkInDate"
+      name="checkInDate"
+      required
+    />
+    <label>Check-Out-Date:</label>
+    <input
+      type="date"
+      [(ngModel)]="booking.checkOutDate"
+      name="checkOutDate"
+      required
+    />
+    <button type="submit">Add Booking</button>
+  </form>
+</div>
